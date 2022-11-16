@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    line-height: 1.5;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url("/images/background3.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    background-attachment: fixed;
+}
