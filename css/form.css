@@ -1,10 +1,7 @@
 .form__fieldset {
-    display: flex;
-    flex-direction: column;
     border: 1px solid rgb(248, 245, 245);
     border-radius: 5px;
     box-shadow: 1px 1px 37px -14px rgb(75, 175, 182);
-    margin: 40px 0;
 }
 
 .form__legend {
