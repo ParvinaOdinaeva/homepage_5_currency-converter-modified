@@ -7,7 +7,7 @@
 <br>*Method of use*
 <br>-enter amount
 <br>-select the currency required
-<br>-convert
+<br>-result calculated automatically
 ## *Technologies used:*
 <br>1. HTML
 <br>2. CSS
