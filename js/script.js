@@ -1,17 +1,27 @@
-// złapanie elementu w HTML i przypisanie go do zmiennej
-let formElement = document.querySelector(".js-form");
-let amountElement = document.querySelector(".js-inputAmount");
-let currencyElement  = document.querySelector(".js-currencyList");
-let resultElement  = document.querySelector(".js-result");
+{
+    // Deklaracja finkcji
+    const welcome = () => {
+        console.log("welcome everyone to my homework!");
+    }
+    // Wywołanie funckji
+    welcome();
+}
 
-// wydarzenie/akcja: zatwierdzenie formularza, blokując wysyłkę
-// deklaracja wartości zmiennych
-// deklaracja przeliczenia
-// prezentacja wyniku w zaokragleniu do 2 miejsc po przecinku
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
-    let amount = amountElement .value;
-    let currency = currencyElement .value;
-    let result = ((amount / currency).toFixed(2));
-    resultElement.innerText = (`${result} PLN`);
-});
+
+
+{
+    const result = () => {
+        let amount = amountElement.value; // deklaracja wartości zmiennych
+        let currency = currencyElement.value; // deklaracja wartości zmiennych
+        let result = ((amount / currency).toFixed(2)); // deklaracja przeliczenia
+        resultElement.innerText = (`${result} PLN`); // prezentacja wyniku w zaokragleniu do 2 miejsc po przecinku
+    };
+
+    // złapanie elementu w HTML i przypisanie go do zmiennej
+    let formElement = document.querySelector(".js-form");
+    let resultElement = document.querySelector(".js-result"); // złapanie elementu w HTML i przypisanie go do zmiennej
+    let currencyElement = document.querySelector(".js-currencyList");
+    let amountElement = document.querySelector(".js-inputAmount")
+    
+    formElement.addEventListener("click", result); // Wywołanie funckji: zatwierdzenie formularza poprzez uruchomienie dtałej result
+}
